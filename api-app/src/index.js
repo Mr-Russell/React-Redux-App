@@ -5,11 +5,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import {createStore, applyMiddleware} from 'redux';
+import combineReducers from './store/reducers/comboReducer.js';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import {Provider} from 'react-redux';
 
-const store = createStore(reducer, applyMiddleware(thunk, logger))
+const store = createStore(combineReducers, applyMiddleware(thunk, logger))
 
 ReactDOM.render(
   <React.StrictMode>
