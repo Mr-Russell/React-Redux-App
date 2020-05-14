@@ -19,8 +19,13 @@ const Chucky = styled.div`
       background-color: lightblue;
 
         h1{
-          padding-bottom: 2px;
+          padding-bottom: 0px;
           margin-bottom: 0px;
+        }
+
+        h6{
+          padding-top: 0;
+          margin-top: 0;
         }
     }
     
@@ -35,10 +40,19 @@ const Chucky = styled.div`
         h2{
           font-style: italic;
         }
+
+        h3{
+          font-family: 'Oswald', sans-serif;
+        }
+    }
+
+    h1, h6, h2 {
+      font-family: 'Oswald', sans-serif;
     }
 
     .error{
       color: red;
+      font-family: 'Play', sans-serif;
     }
 
     button{
@@ -50,6 +64,12 @@ const Chucky = styled.div`
       font-weight: bold;
       font-size: .8rem;
       margin-bottom: 20px;
+      cursor: pointer;
+
+       :hover{
+          background-color: darkslateblue;
+          font-size: .9rem;
+        }
     }
 
 `
